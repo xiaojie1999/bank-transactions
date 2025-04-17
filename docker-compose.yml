@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  bank-transactions:
+    build: .
+    image: bank-transactions:latest
+    container_name: bank-transactions
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
