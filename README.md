@@ -44,6 +44,7 @@ banktransaction/
 │   └── service.yml
 ├── pom.xml
 └── README.md
+   ```
 ## Requirements
 
 - Java 21+
@@ -57,7 +58,7 @@ banktransaction/
 1. Navigate to the project folder:
    ```bash
    cd project-folder
-   ```
+
 
 2. Build and start the containers:
    ```bash
@@ -171,8 +172,14 @@ The Bank Transaction System provides a REST API for managing transaction. It all
 - **Description**: Retrieves details of an transaction by its unique ID.
 - **Response**:
   ```json
+
   {
-    "id": "105d12fb-3f74-4f29-b29b-8b473ab9c504"
+    "id": "105d12fb-3f74-4f29-b29b-8b473ab9c504",
+    "accountId": "string",
+    "amount": "string",
+    "type": "string",
+    "description": "string",
+    "timestamp": "string"
   }
   ```
 - **Validation**:
@@ -215,7 +222,7 @@ The Bank Transaction System provides a REST API for managing transaction. It all
 - **Validation**:
     - `id` must exist.
 ### **6. Get transactions Count**
-- **Method**: `DELETE`
+- **Method**: `GET`
 - **Endpoint**: `/api/transactions/count`
 - **Description**: Deletes an transaction by its unique ID.
 - **Response**:
