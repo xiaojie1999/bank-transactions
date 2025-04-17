@@ -36,8 +36,7 @@ banktransaction/
 │   │           └── transactions.html
 │   └── test/
 │       └── java/com/example/banktransactions/
-│           ├── TransactionControllerTest.java
-│           ├── TransactionServiceTest.java
+│           ├── TestCase.java
 ├── Dockerfile
 ├── docker-compose.yml
 ├── kubernetes/
