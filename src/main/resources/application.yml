@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: bank-transaction
+server:
+  port: 8080
+  context-path: /
+  max-http-header-size: 8192
+  tomcat:
+    accept-count: 2000
+    max-connections: 20000
+    max-threads: 2000
+    uri-encoding: UTF-8
+    min-spare-threads: 200
+    accesslog:
+      directory: /data/logs/
+      enabled: false
